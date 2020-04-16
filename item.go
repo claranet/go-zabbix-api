@@ -17,8 +17,8 @@ type (
 
 const (
 	// Different item type, see :
-	// - "type" in https://www.zabbix.com/documentation/3.2/manual/api/reference/item/object
-	// - https://www.zabbix.com/documentation/3.2/manual/config/items/itemtypes
+	// - "type" in https://www.zabbix.com/documentation/4.4/manual/api/reference/item/object
+	// - https://www.zabbix.com/documentation/4.4/manual/config/items/itemtypes
 
 	// ZabbixAgent type
 	ZabbixAgent ItemType = 0
@@ -54,6 +54,12 @@ const (
 	Calculated ItemType = 15
 	// JMXAgent type
 	JMXAgent ItemType = 16
+	// SNMPTrap type (new in 2.2)
+	SNMPTrap ItemType = 17
+	// DependentItem type (new in 3.4)
+	DependentItem ItemType = 18
+	//HTTPAgent type (new in 4.0)
+	HTTPAgent ItemType = 19
 )
 
 const (
